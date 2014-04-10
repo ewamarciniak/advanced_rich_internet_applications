@@ -11,3 +11,4 @@ Again , this is my second modification to show that the branch is working:  20:1
 >>>>>>> ee1803d015a5efa828aefa6a12401ad604a47190
 
 test4 from John
+just a bit of modifications from Kean for testing 

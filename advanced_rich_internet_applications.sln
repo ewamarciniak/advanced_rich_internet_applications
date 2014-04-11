@@ -8,20 +8,20 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "advanced_rich_internet_appl
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_55496"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\..\aria_proj\advanced_rich_internet_applications\"
+		Debug.AspNetCompiler.PhysicalPath = "..\advanced_rich_internet_applications\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55496\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_55496"
-		Release.AspNetCompiler.PhysicalPath = "..\..\..\aria_proj\advanced_rich_internet_applications\"
+		Release.AspNetCompiler.PhysicalPath = "..\advanced_rich_internet_applications\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55496\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "..\..\..\aria_proj\advanced_rich_internet_applications\"
+		SlnRelativePath = "..\advanced_rich_internet_applications\"
 	EndProjectSection
 EndProject
 Global

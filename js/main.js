@@ -13,4 +13,19 @@ window._skel_config = {
 
 $(document).ready(function() {
  //Content to be added
+
+    $(mymodule.dragDiv);
 });
+
+var mymodule = (function () {
+//Private
+
+//Public
+    return {
+        dragDiv: function () {
+            $('#bruceLee').draggable();
+        }
+    }
+})();
+
+

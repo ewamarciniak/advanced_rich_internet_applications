@@ -20,3 +20,5 @@ just a bit of modifications from Kean for testing
 >>>>>>> jourzee_work
 another test 6
 >>>>>>> origin/master
+Changed my branch name to Jourz.....hate the underscore
+

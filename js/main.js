@@ -3,9 +3,9 @@ window._skel_config = {
         preloadStyleSheets: true,
     resetCSS: true,
     boxModel: 'border',
-    grid: { gutters: 30 },
+    grid: { gutters: 10 },
     breakpoints: {
-        wide: { range: '1200-', containers: 1140, grid: { gutters: 50 } },
+        wide: { range: '1200-', containers: 1140, grid: { gutters: 10 } },
         narrow: { range: '481-1199', containers: 960 },
         mobile: { range: '-480', containers: 'fluid', lockViewport: true, grid: { collapse: true } }
     }

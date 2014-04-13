@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<!--  showing one property from show details link -->
+<!--  google maps api in Javascript -->
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script src="js/googlemap.js"></script>
+<script src="js/location.js"></script>
+<html>
+<head>
+    <title> Our GYMNASIUMS </title>
+</head>
+<br>
+<br>
+<body>
+    <div id="googlemap" style="margin:0;padding:0;position:absolute;left:0px;top:20px;width:1500px; z-index:0;">
+
+        </div>
+            <h2>List Of our Gymnasium Locations</h2>
+            <div style="left:1300px; top: 200px; width: 350px">
+                
+                <div align="center">
+                    <select name="mydropdown" id="addressinput">
+                        <option value="Dublin">Dublin</option>
+                        <option value="Cork">Cork</option>
+                        <option value="Galway">Galway</option>
+                    </select>
+                    <input id="Button1" type="button" value="Find" onclick="return Button1_onclick()" />
+                </div>
+               
+            </div>
+
+            <div id="map" style="height: 350px; width: 350px; left: 300px" >
+
+            </div>
+
+
+        </body>
+        </html>

@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/speeddemo.iml" filepath="$PROJECT_DIR$/.idea/speeddemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/speeddemo.iml" filepath="$PROJECT_DIR$/speeddemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/advanced_rich_internet_applications.iml" filepath="$PROJECT_DIR$/.idea/advanced_rich_internet_applications.iml" />
     </modules>
   </component>
 </project>

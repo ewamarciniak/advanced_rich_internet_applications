@@ -1,6 +1,5 @@
 body {
-	background: #ffffff;
-    background-image:url('../img/bg3.gif');
+	background: #2c373b;
 	color: #b2b9bC;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
@@ -28,13 +27,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero {
-	background: #808080;
-	color: #ffffff;
+	background: #369ab8;
+	color: #fff;
 	text-align: center;
 }
 
 #footer {
-	color: rgba(255,255,255,0.5);
+	color: #62696c;
 	text-align: center;
 }
 

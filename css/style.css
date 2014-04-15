@@ -47,3 +47,9 @@ input[type=number]
     width: 191px;
     box-shadow: 2px 2px 0 #828181 inset;
 }
+
+canvas
+{
+    top:0;
+    left:0;
+}

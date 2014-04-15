@@ -1,5 +1,5 @@
 
-function Ctrl($scope) {
+/*function Ctrl($scope) {
 
 
     $scope.myeval = function(string) {
@@ -8,4 +8,4 @@ function Ctrl($scope) {
 
 
     }
-}
+}*/

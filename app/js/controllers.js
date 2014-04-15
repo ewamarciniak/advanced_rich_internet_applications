@@ -1,104 +1,91 @@
 'use strict';
 /* Controllers */
-//alert('alert first');
 angular.module('myApp.controllers', [])
   .controller('MyCtrl1', [function() {
 
-        //alert('hello c1')
+        //Partial One code Goes Here
+
+        //alert('hello from partial One')
 
    }])
     .controller('MyCtrl2', [function() {
 
-        var mymodule = (function () {
-        //Private
+        //Partial Two code Goes Here
 
-        //Public
-            return {
-                $$: function (id) {
-                    'use strict';
-                    if (typeof id != 'undefined') {
-                        return document.getElementById(id);
-                    }
-                    else {
-                        return 'undefined'
-                    }
-                },
-
-                showDivs: function (arg) {
-                    document.getElementById(arg).style.visibility = 'visible';
-                },
-
-                hideDivs: function (arg) {
-                    document.getElementById(arg).style.visibility = 'hidden';
-                }
-
-            }
-        })();
-
-//AddEventListener
-        mymodule.$$('myinput').addEventListener('focus',function () {
-
-            mymodule.showDivs('scorewrapper');
-            return false;
-        }, false);
-
-        mymodule.$$('myinput').addEventListener('blur',function () {
-
-            mymodule.hideDivs('scorewrapper');
-            return false;
-        }, false);
+        //alert('hello from partial Two')
 
     }])
     .controller('MyCtrl3', [function() {
+        //Partial Three code Goes Here
+
+        //alert('hello from partial Three')
+
+        function FindLocation() {
+            //code by John Fitzpatrick
+            // HDIp COM SC
+            geocoder = new google.maps.Geocoder();
+            InitializeMap();
+
+            var address = document.getElementById("addressinput").value;
+            var gymlocations = new Array();
+            gymlocations[0] = "Cork Street Dublin";
+            gymlocations[1] = "Quarry Road, Cabra, Dublin";
+            gymlocations[2] = "Bishopstown Road, Cork";
+
+            geocoder.geocode({ 'address': address }, function (results, status) {
+                if (status == google.maps.GeocoderStatus.OK) {
+                    map.setCenter(results[0].geometry.location);
+                    var marker = new google.maps.Marker({
+                        map: map,
+                        position: results[0].geometry.location
+                    });
+
+
+                    if (address == gymlocations[0]) {
+                        document.getElementById('l1').innerHTML = gymlocations[0]+ 'Tel: 01-2323456';
+
+                    }
+                    if (address == gymlocations[1]) {
+                        document.getElementById('l1').innerHTML = gymlocations[1] + ' Tel: 01 45443321';
+
+                    }
+                    if (address == gymlocations[2]) {
+                        document.getElementById('l1').innerHTML = gymlocations[2] + ' Tel: 01 7675432';
+
+                    }
+                }
+                else {
+                    alert("Not successful for the following reason: " + status);
+                }
+            });
+        }
+
+        FindLocation();
+
+       document.getElementById('Button1').addEventListener('click',function () {
+
+            FindLocation();
+            return false;
+       }, false);
+
 
     }])
     .controller('MyCtrl4', [function() {
 
+        //Partial Four code Goes Here
+
+        //alert('hello from partial Four')
+
+
+        //Sample code.  May be deleted
        document.getElementById('bonnie2').innerHTML = "Added using Inner HTML";
        document.getElementById('bonnie3').style.visibility = 'visible';
-    }]).controller('MyCtrl5', function($scope) {
 
-        $scope.markup = function(arg) {
+    }]).controller('MyCtrl5', function() {
 
-            return arg + 100 * arg};
+        //Partial five code Goes Here
 
-            $scope.services = [
-                {
-                    name: "Web Development",
-                    price: 300,
-                    active: true
-                },
-                {
-                    name: "Design",
-                    price: 400,
-                    active: false
-                },
-                {
-                    name: "Integration",
-                    price: 300,
-                    active: false
-                },
-                {
-                    name: "Training",
-                    price: 220,
-                    active: false
-                }
-            ];
-
-            $scope.toggleActive = function(s) {
-                s.active = !s.active
-            };
-
-            $scope.total = function() {
-                var total = 0;
-
-                angular.forEach($scope.services, function(s) {
-                    if (s.active) {
-                        total+= s.price;
-                    }
-                });
-                return total;
-            } ;
+        //alert('hello from partial Five')
 });
 
 

@@ -59,9 +59,10 @@ nav a:last-child{
 }
 
 nav.home .home,
-nav.projects .projects,
-nav.services .services,
-nav.contact .contact{
+nav.partialTwo .partialTwo,
+nav.partialThree .partialThree,
+nav.partialFour .partialFour,
+nav.partialFive .partialFive{
     background-color:#e35885;
 }
 

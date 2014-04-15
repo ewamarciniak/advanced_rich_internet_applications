@@ -11,17 +11,45 @@
 </head>
 <body>
 <div id="main" ng-app>
-    <nav class="{{active}}" >
-        <a href="#/app/view1" ng-click="active='home'" class="home">Home</a>
-        <a href="#/view2" ng-click="active='projects'" class="projects">NG Binding</a>
-        <a href="#/view3" ng-click="active='services'" class="services">Adrian Example</a>
-        <a href="#/view4" ng-click="active='contact'" class="contact">Bonnie</a>
-        <a href="#/view5" ng-click="active='newContact'" class="newContact">Shopping Cart</a>
-    </nav>
 
-  <div ng-view></div>
+
+
+    <div class="container">
+        <!-- Header -->
+        <div id="header" class="row">
+            <div class="12u">
+                <nav class="{{active}}" >
+                    <a href="#/app/view1" ng-click="active='home'" class="home">Home</a>
+                    <a href="#/view2" ng-click="active='projects'" class="projects">NG Binding</a>
+                    <a href="#/view3" ng-click="active='services'" class="services">Adrian Example</a>
+                    <a href="#/view4" ng-click="active='contact'" class="contact">Bonnie</a>
+                    <a href="#/view5" ng-click="active='newContact'" class="newContact">Shopping Cart</a>
+                </nav>
+            </div>
+
+        </div>
+
+        <!-- Hero -->
+        <section id="hero">
+
+            <div ng-view></div>
+
+
+        </section>
+
+
+
+        <!-- Footer -->
+        <div id="footer">
+            &copy; Example. All rights reserved.
+        </div>
+    </div>
+
+
+
+
   <script src="js/main.js"></script>
-  <script src="./js/vendor/skel.min.js"></script>
+  <script src="js/vendor/skel.min.js"></script>
   <script src="js/angular.js"></script>
   <script src="js/angular-route.js"></script>
   <script src="js/app.js"></script>

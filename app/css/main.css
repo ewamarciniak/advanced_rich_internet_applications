@@ -97,40 +97,19 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-#inputdiv {
-    text-align: center;
-}
 
-#myinput {
+/*#mapBox {text-align: center;*/
 
-    display: inline-block;
-    width: 50%;
-}
+    /*display: inline-block;*/
 
-#scorewrapper {
-    background-color: greenyellow;
-    text-align: center;
-    display: inline-block;
-    margin-left: 50px;
-    visibility: hidden;
-    border-radius: 25px;
-    box-shadow: 10px 10px 5px #888888;
-}
+/*}*/
 
-#output {
-    font-family: Verdana sans-serif;
-    padding: 0 20px;
-    font-size: 50px;
-    text-align: center;
-}
+
 
 ul {
     list-style: none;
 }
 
-#shoppingcart{text-align: center;
-    display: inline-block;
-    }
 /* ==========================================================================
    Helper classes
    ========================================================================== */

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/angular2.css"/>
     <link rel="stylesheet" type="text/css" href="css/angular.css"/>
     <link rel="stylesheet" href="./css/vendor/foundation.min.css"/>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
 </head>
 <body>
 <div id="main" ng-app>
@@ -18,7 +20,7 @@
                 <nav class="{{active}}">
                     <a href="#/app/view1" ng-click="active='home'" class="home">Home</a>
                     <a href="#/view2" ng-click="active='partialTwo'" class="partialTwo">Partial Two</a>
-                    <a href="#/view3" ng-click="active='partialThree'" class="partialThree">Partial Three</a>
+                    <a href="#/view3" ng-click="active='partialThree'" class="partialThree">Gym Locations</a>
                     <a href="#/view4" ng-click="active='partialFour'" class="partialFour">Partial Four</a>
                     <a href="#/view5" ng-click="active='partialFive'" class="partialFive">Partial Five</a>
                 </nav>
@@ -49,6 +51,8 @@
     <script src="js/app.js"></script>
     <script src="js/vendor/ui-utils.js"></script>
     <script src="js/Converter.js"></script>
+    <script src="js/googlemap.js"></script>
+    <script src="js/location.js"></script>
 </div>
 </body>
 </html>

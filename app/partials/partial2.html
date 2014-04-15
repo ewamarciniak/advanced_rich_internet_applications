@@ -1,0 +1,15 @@
+
+<h4>Enter name to see Angular data binding in action: </h4>
+<div ng-controller="Ctrl">
+
+  <div id="inputdiv"> <input type="text" id ="myinput" ng-model="name"><br></div>
+    <div id="scorewrapper">
+        <ul>
+            <li><p id="output" ng-bind="name"></p></li>
+            <li><p id="dragpara">I am not yet draggable!</p></li>
+        </ul>
+    </div>
+</div>
+<div class="container" ng-app ="">
+    <header ng-include="'temlates/nav.html'"></header>
+</div>

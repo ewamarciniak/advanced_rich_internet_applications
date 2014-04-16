@@ -3,25 +3,31 @@
 
 
 
+
 angular.module('myApp.controllers', ['ngSanitize'])
 
+  .controller('MyCtrl1', function($scope) {
 
-  .controller('MyCtrl1', [function () {
-      //Partial One code Goes Here
+        //Partial One code Goes Here
+        //alert('hello from partial One')
 
-   }])
-    .controller('MyCtrl2', [function() {
+   })
+    .controller('MyCtrl2', function($scope, $http) {
 
-        //Partial Two code Goes Here
+        $http.get('./skepticsCommodities.json').success(function(data) {
+            $scope.commodities = data;
+        });
 
-        //alert('hello from partial Two')
+        $scope.orderProp = 'name';
+        $scope.orderPropAlt = 'email';
+        $scope.markup = function(arg) {return arg + 0.45 * arg};
 
-    }])
+
+    })
 
     .controller('MyCtrl3', function($scope) {
 
         //Partial Three code Goes Here
-
         //alert('hello from partial Three')
 
         function FindLocation() {
@@ -71,8 +77,6 @@ angular.module('myApp.controllers', ['ngSanitize'])
 
             FindLocation();
             return false;
-
-
         };
 
         /*document.getElementById('Button1').addEventListener('click',function () {

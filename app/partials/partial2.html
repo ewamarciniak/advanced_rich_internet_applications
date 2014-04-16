@@ -1,74 +1,51 @@
+<h4>Listing commodities (Json)</h4>
 
-<!DOCTYPE>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-    <div>
-        <h1>MEMBERS PAGE </h1>
+<div>
+    <div class="row">
+        <div class="-4u 6u">
+            <!--Search Functionality-->
+
+            <h4>Search</h4> <input ng-model="query"
+                                   placeholder="Search"
+                                   id="ngsearch"
+                                   > </br> </br>
+            <h4>Sort by</h4>
+            <select ng-model="orderProp">
+                <option value="name">Alphabetical</option>
+                <option value="price">Lowest Price</option>
+                <option value="-price">Highest Price</option>
+                <option value="category">Category</option>
+
+                <option value="-created_at">Created at</option>
+                <option value="-updated_at">Updated at</option>
+                <option value="-id">id</option>
+
+            </select>
+        </div>
+
+        <div class="row">
+          <div class="-4u 8u">
+            <!--Table of Products--><div>Product Listing</div>
+            <ul>
+                <li class="jsonli" ng-repeat="product in commodities | filter:query | orderBy:orderProp">
+
+                    <table class="jsonTable">
+                        <tr>
+
+                            <td title="Name">
+                                {{product.name}}
+                            </td>
+                            <td>{{(product.price) | currency:"&euro;"}}</td>
+                            <td title="Sales Price">{{ markup(product.price) | currency:"&euro;" }}</td>
+                            <td title="Category">{{product.category}}</td>
+                        </tr>
+                   </table>
+                </li>
+            </ul>
+          </div>
+        </div>
     </div>
-</body>
-</html>
-<?php
-session_start();
-?>
-<?php
-session_start();
-if (!isset($_SESSION['username']))
-{
-   header('Location: ./login.php');
-   exit;
-}
-?>
-<?php
-if ($_SERVER['REQUEST_METHOD'] == 'POST')
-{
-   session_start();
-   unset($_SESSION['username']);
-   //unset($_SESSION['id']);
-
-   //header('Location: http://www.uropa.com');
-   exit;
-}
-?>
+</div>
 
 
-
-<h3>Hello</h3>
-<?php
-if (isset($_SESSION['username']))
-{
-// log into db
-$host = "journalfrance.db.9939749.hostedresource.com";
-$user = "journalfrance";
-$pass = "Gymfit!6";
-$database = "journalfrance";
-$linkID = mysql_connect($host, $user, $pass) or die("Could not connect to host.");
-mysql_select_db($database, $linkID) or die("Could not find database.");
-
-
-
-  echo $_SESSION['username'];
-  echo $_SESSION['ID'];
-
-
-
-
-   ?></br>
-<?php
-   $sth = mysql_query("SELECT  * FROM totalcalories");
-$rows = array();
-while($r = mysql_fetch_assoc($sth)) {
-   $rows[] = $r;
-}
-print json_encode($rows);
-
-
-}
-else
-{
-   echo 'Not logged in';
-}
-?>
 

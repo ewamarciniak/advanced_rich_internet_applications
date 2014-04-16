@@ -1,9 +1,11 @@
 'use strict';
 /* Controllers */
 
+
 angular.module('myApp.controllers', ['ngSanitize'])
 
   .controller('MyCtrl1', function($scope) {
+
 
         //Partial One code Goes Here
         //alert('hello from partial One')
@@ -70,20 +72,15 @@ angular.module('myApp.controllers', ['ngSanitize'])
         FindLocation();
 
 
-        $scope.jourz = function() {
+        $scope.jourz = function () {
 
             FindLocation();
             return false;
-        };
 
-        /*document.getElementById('Button1').addEventListener('click',function () {
-
-            FindLocation();
-            return false;
-        }, false);*/
+        }
 
     })
-
+        
     .controller('MyCtrl4', [function() {
 
 

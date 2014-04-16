@@ -1,21 +1,23 @@
 'use strict';
 /* Controllers */
-angular.module('myApp.controllers', [])
-  .controller('MyCtrl1', [function () {
 
+
+angular.module('myApp.controllers', [])
+
+  .controller('MyCtrl1', [function () {
       //Partial One code Goes Here
 
-      //alert('hello from partial One')
-
-  }])
-    .controller('MyCtrl2', [function () {
+   }])
+    .controller('MyCtrl2', [function() {
 
         //Partial Two code Goes Here
 
         //alert('hello from partial Two')
 
     }])
-    .controller('MyCtrl3', [function () {
+
+    .controller('MyCtrl3', function($scope) {
+
         //Partial Three code Goes Here
 
         //alert('hello from partial Three')
@@ -62,15 +64,28 @@ angular.module('myApp.controllers', [])
 
         FindLocation();
 
-        document.getElementById('Button1').addEventListener('click', function () {
+
+        $scope.jourz = function() {
 
             FindLocation();
             return false;
-        }, false);
 
 
-    }])
-    .controller('MyCtrl4', [function () {
+        };
+
+
+
+
+
+        /*document.getElementById('Button1').addEventListener('click',function () {
+
+            FindLocation();
+            return false;
+        }, false);*/
+
+    })
+    .controller('MyCtrl4', [function() {
+
 
         //Partial Four code Goes Here
 

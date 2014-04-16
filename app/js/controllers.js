@@ -212,7 +212,7 @@ angular.module('myApp.controllers', ['ngSanitize'])
 
     }).controller('MyCtrl7', function () {
         //controller seven  ADMIN
-
+    })
 
 
 

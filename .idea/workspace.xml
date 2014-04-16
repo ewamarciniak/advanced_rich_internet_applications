@@ -13,6 +13,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/test/spec/ConverterSpec.js" afterPath="$PROJECT_DIR$/app/test/spec/ConverterSpec.js" />
 >>>>>>> replaced addEventListener with angular ngclick
@@ -56,6 +57,10 @@
 >>>>>>> added working angular/json search functionality
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
 >>>>>>> added ng-sanitize
+=======
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/js/controller.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/controllers.js" afterPath="$PROJECT_DIR$/app/js/controllers.js" />
+>>>>>>> removed extraeneous controller FILE
     </list>
     <ignored path="advanced_rich_internet_applications.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,6 +83,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -164,6 +170,12 @@
 >>>>>>> replaced addEventListener with angular ngclick
 =======
             <state vertical-scroll-proportion="0.8689655" vertical-offset="0" max-vertical-offset="1134">
+=======
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-21.0" vertical-offset="0" max-vertical-offset="1134">
+>>>>>>> removed extraeneous controller FILE
               <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
 >>>>>>> added working angular/json search functionality
               <folding />
@@ -361,6 +373,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <file leaf-file-name="partial4.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/partials/partial4.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -402,6 +415,13 @@
             <state vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="1800">
               <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
 >>>>>>> added working angular/json search functionality
+=======
+      <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/js/controllers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7615894" vertical-offset="1250" max-vertical-offset="1890">
+              <caret line="95" column="3" selection-start-line="95" selection-start-column="3" selection-end-line="95" selection-end-column="3" />
+>>>>>>> removed extraeneous controller FILE
               <folding />
 >>>>>>> replaced addEventListener with angular ngclick
             </state>
@@ -604,12 +624,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD
 =======
 >>>>>>> added working angular/json search functionality
+=======
+>>>>>>> removed extraeneous controller FILE
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD
 <<<<<<< HEAD
               <option name="myItemId" value="partials" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -674,6 +698,9 @@
 >>>>>>> added ng-sanitize
 =======
 =======
+=======
+              <option name="myItemId" value="js" />
+>>>>>>> removed extraeneous controller FILE
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -687,6 +714,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD
 >>>>>>> removed extraeneous controller FILE
               <option name="myItemId" value=".idea" />
 >>>>>>> added working angular/json search functionality
@@ -696,6 +724,8 @@
               <option name="myItemId" value="js" />
 >>>>>>> added ng-sanitize
 =======
+=======
+>>>>>>> removed extraeneous controller FILE
               <option name="myItemId" value=".idea" />
 >>>>>>> added working angular/json search functionality
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -814,6 +844,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1397567986088" duration="37552000" />
 =======
       <workItem from="1397567986088" duration="24229000" />
@@ -824,10 +855,14 @@
 =======
       <workItem from="1397567986088" duration="35459000" />
 >>>>>>> added working angular/json search functionality
+=======
+      <workItem from="1397567986088" duration="36203000" />
+>>>>>>> removed extraeneous controller FILE
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -864,6 +899,13 @@
 >>>>>>> added ng-sanitize
     <editor active="true" />
 >>>>>>> added gravatar image skeleton code
+=======
+    <option name="totallyTimeSpent" value="39515000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="63" y="24" width="1303" height="744" extended-state="6" />
+    <editor active="false" />
+>>>>>>> removed extraeneous controller FILE
     <layout>
 <<<<<<< HEAD
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -901,6 +943,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28332004" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
 >>>>>>> replaced addEventListener with angular ngclick
 =======
@@ -918,6 +961,9 @@
 =======
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2815226" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
 >>>>>>> added ng-sanitize
+=======
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2815226" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> removed extraeneous controller FILE
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1199,6 +1245,7 @@
       </provider>
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/index.html">
 >>>>>>> replaced addEventListener with angular ngclick
       <provider selected="true" editor-type-id="text-editor">
@@ -1208,6 +1255,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/js/canvasjs.min.js">
+=======
+    <entry file="file://$PROJECT_DIR$/index.html">
+>>>>>>> removed extraeneous controller FILE
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5967">
           <folding>
@@ -1476,6 +1526,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/partials/partial5.html">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -1509,15 +1560,19 @@
 =======
     <entry file="file://$PROJECT_DIR$/app/js/controllers.js">
 >>>>>>> added working angular/json search functionality
+=======
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+>>>>>>> removed extraeneous controller FILE
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="1800">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+        <state vertical-scroll-proportion="-21.0" vertical-offset="0" max-vertical-offset="1134">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
+    <entry file="file://$PROJECT_DIR$/app/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <state vertical-scroll-proportion="-2.2243478" vertical-offset="1441" max-vertical-offset="2034">
@@ -1531,6 +1586,10 @@
         <state vertical-scroll-proportion="0.8689655" vertical-offset="0" max-vertical-offset="1134">
           <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
 >>>>>>> added working angular/json search functionality
+=======
+        <state vertical-scroll-proportion="0.7615894" vertical-offset="1250" max-vertical-offset="1890">
+          <caret line="95" column="3" selection-start-line="95" selection-start-column="3" selection-end-line="95" selection-end-column="3" />
+>>>>>>> removed extraeneous controller FILE
           <folding />
         </state>
       </provider>

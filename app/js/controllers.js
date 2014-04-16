@@ -1,7 +1,6 @@
 'use strict';
 /* Controllers */
 
-
 angular.module('myApp.controllers', ['ngSanitize'])
 
   .controller('MyCtrl1', function($scope) {
@@ -23,6 +22,7 @@ angular.module('myApp.controllers', ['ngSanitize'])
 
 
     })
+
 
     .controller('MyCtrl3', function($scope) {
 
@@ -195,7 +195,6 @@ angular.module('myApp.controllers', ['ngSanitize'])
             chart3.render();
             chart3 = {};
         }
-
         WorkoutStatistics();
 
 

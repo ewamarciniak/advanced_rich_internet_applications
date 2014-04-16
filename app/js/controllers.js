@@ -2,7 +2,9 @@
 /* Controllers */
 
 
-angular.module('myApp.controllers', [])
+
+angular.module('myApp.controllers', ['ngSanitize'])
+
 
   .controller('MyCtrl1', [function () {
       //Partial One code Goes Here
@@ -73,10 +75,6 @@ angular.module('myApp.controllers', [])
 
         };
 
-
-
-
-
         /*document.getElementById('Button1').addEventListener('click',function () {
 
             FindLocation();
@@ -84,6 +82,7 @@ angular.module('myApp.controllers', [])
         }, false);*/
 
     })
+
     .controller('MyCtrl4', [function() {
 
 

@@ -214,6 +214,7 @@ angular.module('myApp.controllers', ['ngSanitize'])
         //alert('hello from partial Five')
 
 
+
     }).controller('MyCtrl6', function () {
         //controller six
 
@@ -225,6 +226,7 @@ angular.module('myApp.controllers', ['ngSanitize'])
         //controller eight  ADMIN2
 
     });
+
 
 
 

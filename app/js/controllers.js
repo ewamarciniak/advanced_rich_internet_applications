@@ -83,7 +83,6 @@ angular.module('myApp.controllers', ['ngSanitize'])
         
     .controller('MyCtrl4', [function() {
 
-
         //Partial Four code Goes Here
 
         //alert('hello from partial Four')
@@ -203,6 +202,7 @@ angular.module('myApp.controllers', ['ngSanitize'])
 
     }]).controller('MyCtrl5', function () {
 
+
         //Partial five code Goes Here
 
         //alert('hello from partial Five')
@@ -214,11 +214,6 @@ angular.module('myApp.controllers', ['ngSanitize'])
     }).controller('MyCtrl7', function () {
         //controller seven  ADMIN
 
-
-    }).controller('MyCtrl8', function () {
-        //controller eight  ADMIN2
-
-    });
 
 
 

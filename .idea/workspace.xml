@@ -11,9 +11,13 @@
 =======
     <list default="true" id="16b37241-fa35-4898-8d0a-a09eed11191a" name="Default" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/test/spec/ConverterSpec.js" afterPath="$PROJECT_DIR$/app/test/spec/ConverterSpec.js" />
 >>>>>>> replaced addEventListener with angular ngclick
+=======
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/js/angular-sanitize.min.js" />
+>>>>>>> added ng-sanitize
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/controllers.js" afterPath="$PROJECT_DIR$/app/js/controllers.js" />
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -33,6 +37,7 @@
 >>>>>>> removed extraeneous controller FILE
 =======
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/partial5.html" afterPath="$PROJECT_DIR$/app/partials/partial5.html" />
 >>>>>>> added gravatar image skeleton code
 =======
@@ -40,6 +45,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/partial3.html" afterPath="$PROJECT_DIR$/app/partials/partial3.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/partial4.html" afterPath="$PROJECT_DIR$/app/partials/partial4.html" />
 >>>>>>> replaced addEventListener with angular ngclick
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/partial4.html" afterPath="$PROJECT_DIR$/app/partials/partial4.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+>>>>>>> added ng-sanitize
     </list>
     <ignored path="advanced_rich_internet_applications.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,6 +74,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -84,6 +94,13 @@
             <state vertical-scroll-proportion="-17.708334" vertical-offset="187" max-vertical-offset="1116">
               <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
 >>>>>>> replaced addEventListener with angular ngclick
+=======
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.737931" vertical-offset="0" max-vertical-offset="1134">
+              <caret line="56" column="7" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
+>>>>>>> added ng-sanitize
               <folding />
             </state>
           </provider>
@@ -258,6 +275,7 @@
         <entry file="file://$PROJECT_DIR$/app/partials/partial4.html">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state vertical-scroll-proportion="-4.5" vertical-offset="0" max-vertical-offset="342">
               <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
 >>>>>>> replaced addEventListener with angular ngclick
@@ -272,11 +290,16 @@
             <state vertical-scroll-proportion="-4.5" vertical-offset="0" max-vertical-offset="342">
               <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
 >>>>>>> replaced addEventListener with angular ngclick
+=======
+            <state vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="378">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+>>>>>>> added ng-sanitize
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -303,11 +326,19 @@
 >>>>>>> added ng-sanitize
 =======
 >>>>>>> replaced addEventListener with angular ngclick
+=======
+      <file leaf-file-name="angular-sanitize.min.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/js/angular-sanitize.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+>>>>>>> added ng-sanitize
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -342,6 +373,13 @@
             <state vertical-scroll-proportion="-2.2243478" vertical-offset="1441" max-vertical-offset="2034">
               <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
 >>>>>>> replaced addEventListener with angular ngclick
+=======
+      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/js/controllers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1178" max-vertical-offset="1872">
+              <caret line="74" column="10" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
+>>>>>>> added ng-sanitize
               <folding />
 >>>>>>> replaced addEventListener with angular ngclick
             </state>
@@ -389,6 +427,7 @@
         <option value="$PROJECT_DIR$/app/js/controller.js" />
         <option value="$PROJECT_DIR$/app/css/angular.css" />
         <option value="$PROJECT_DIR$/app/css/main.css" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/app/partials/partial4.html" />
         <option value="$PROJECT_DIR$/app/index.html" />
 >>>>>>> replaced addEventListener with angular ngclick
@@ -415,10 +454,19 @@
 =======
         <option value="$PROJECT_DIR$/app/partials/partial1.html" />
 >>>>>>> replaced addEventListener with angular ngclick
+=======
+        <option value="$PROJECT_DIR$/app/test/spec/ConverterSpec.js" />
+        <option value="$PROJECT_DIR$/app/partials/partial3.html" />
+        <option value="$PROJECT_DIR$/app/partials/partial1.html" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/partials/partial4.html" />
+        <option value="$PROJECT_DIR$/app/js/controllers.js" />
+>>>>>>> added ng-sanitize
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -435,10 +483,15 @@
     <option name="height" value="715" />
 >>>>>>> replaced addEventListener with angular ngclick
 =======
+=======
+>>>>>>> added ng-sanitize
     <option name="x" value="63" />
     <option name="y" value="24" />
     <option name="width" value="1303" />
     <option name="height" value="744" />
+<<<<<<< HEAD
+>>>>>>> added ng-sanitize
+=======
 >>>>>>> added ng-sanitize
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -554,6 +607,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD
               <option name="myItemId" value="partials" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -609,6 +663,9 @@
 >>>>>>> added working angular/json search functionality
 =======
 >>>>>>> replaced addEventListener with angular ngclick
+=======
+              <option name="myItemId" value="js" />
+>>>>>>> added ng-sanitize
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -723,14 +780,19 @@
       <updated>1396891874583</updated>
       <workItem from="1397559838404" duration="3312000" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1397567986088" duration="37552000" />
 =======
       <workItem from="1397567986088" duration="24229000" />
 >>>>>>> replaced addEventListener with angular ngclick
+=======
+      <workItem from="1397567986088" duration="28982000" />
+>>>>>>> added ng-sanitize
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="40864000" />
   </component>
@@ -754,6 +816,12 @@
   <component name="ToolWindowManager">
     <frame x="70" y="60" width="1295" height="715" extended-state="0" />
 >>>>>>> replaced addEventListener with angular ngclick
+=======
+    <option name="totallyTimeSpent" value="32294000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="63" y="24" width="1303" height="744" extended-state="6" />
+>>>>>>> added ng-sanitize
     <editor active="true" />
 >>>>>>> added gravatar image skeleton code
     <layout>
@@ -792,6 +860,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28332004" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
 >>>>>>> replaced addEventListener with angular ngclick
 =======
@@ -806,6 +875,9 @@
 =======
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28332004" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
 >>>>>>> replaced addEventListener with angular ngclick
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2815226" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> added ng-sanitize
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -863,6 +935,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/css/style.css">
 =======
     <entry file="file://$PROJECT_DIR$/test/spec/backEndServiceCallerSpec.js">
@@ -872,6 +945,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> added ng-sanitize
 =======
 >>>>>>> added ng-sanitize
     <entry file="file://$PROJECT_DIR$/test/js/sinon-1.9.1.js">
@@ -1281,14 +1356,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
+    <entry file="file://$PROJECT_DIR$/app/partials/partial1.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state vertical-scroll-proportion="-15.916667" vertical-offset="536" max-vertical-offset="1116">
           <caret line="51" column="43" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
 =======
         <state vertical-scroll-proportion="-17.708334" vertical-offset="187" max-vertical-offset="1116">
           <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+=======
+        <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="198">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+>>>>>>> added ng-sanitize
           <folding />
         </state>
       </provider>
@@ -1301,23 +1381,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/partials/partial4.html">
+    <entry file="file://$PROJECT_DIR$/app/partials/partial3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.5" vertical-offset="0" max-vertical-offset="342">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        <state vertical-scroll-proportion="-12.75" vertical-offset="0" max-vertical-offset="540">
+          <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/angular-sanitize.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/partials/partial1.html">
+    <entry file="file://$PROJECT_DIR$/app/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="198">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
 >>>>>>> replaced addEventListener with angular ngclick
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="1178" max-vertical-offset="1872">
+          <caret line="74" column="10" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
+>>>>>>> added ng-sanitize
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/partials/partial5.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -1346,20 +1442,26 @@
 >>>>>>> added gravatar image skeleton code
 =======
     <entry file="file://$PROJECT_DIR$/app/partials/partial3.html">
+=======
+    <entry file="file://$PROJECT_DIR$/app/partials/partial4.html">
+>>>>>>> added ng-sanitize
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.75" vertical-offset="0" max-vertical-offset="540">
-          <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="378">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/controllers.js">
+    <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="-2.2243478" vertical-offset="1441" max-vertical-offset="2034">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
 >>>>>>> replaced addEventListener with angular ngclick
+=======
+        <state vertical-scroll-proportion="1.737931" vertical-offset="0" max-vertical-offset="1134">
+          <caret line="56" column="7" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
+>>>>>>> added ng-sanitize
           <folding />
         </state>
       </provider>

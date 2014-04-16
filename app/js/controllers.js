@@ -1,9 +1,6 @@
 'use strict';
 /* Controllers */
 
-
-
-
 angular.module('myApp.controllers', ['ngSanitize'])
 
   .controller('MyCtrl1', function($scope) {
@@ -214,7 +211,6 @@ angular.module('myApp.controllers', ['ngSanitize'])
         //alert('hello from partial Five')
 
 
-
     }).controller('MyCtrl6', function () {
         //controller six
 
@@ -226,10 +222,6 @@ angular.module('myApp.controllers', ['ngSanitize'])
         //controller eight  ADMIN2
 
     });
-
-
-
-
 
 
 

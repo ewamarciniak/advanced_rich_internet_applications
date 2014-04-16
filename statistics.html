@@ -22,7 +22,6 @@
 <body>
 <div class="container">
     <!-- Nav -->
-    <div>
     <div id="main" ng-app>
         <nav class="{{active}}" ng-click="$event.preventDefault()">
             <a href="#" ng-click="active='home'" class="home">Home</a>
@@ -34,25 +33,41 @@
         </nav>
         <!-- Header -->
         <div id="header" class="row">
+            <div class="4u">
+                <h1>THE GYMNASIUM</h1>
+            </div>
 
         </div>
         <p ng-hide="active">Please click a menu item</p>
 
         <p ng-show="active">You chose <b>{{active}}</b></p>
     </div>
-        <h1>The Exercise Statistics</h1>
-    <section>
-        <div class="u">
-            <img src="img/TF_Home4.jpg" alt="workout"/>
-        </div>
-    </section>
+    <h1>The Exercise Statistics</h1>
 
+
+    <div class="row">
+        <section class="-2u 8u">
+            <div id="chartContainer_1" style="height:400px; width:100%; position: relative"></div>
+        </section>
+    </div>
+
+    <div class="row">
+        <div class="-2u 8u">
+            <div id="chartContainer_2" style="height:400px; width: 80%; position: relative">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="-2u 8u">
+            <div id="chartContainer_3" style="height:400px; position: relative">
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <div id="footer">
         &copy; Example. All rights reserved.
     </div>
-</div>
 </div>
 </body>
 </html>

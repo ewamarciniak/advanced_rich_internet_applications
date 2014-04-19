@@ -56,3 +56,26 @@ canvas
 
 /* Responsive Images */
 img, img.scale-with-grid { outline: 0; max-width: 100%; height: auto; }
+
+
+button {
+    background-color: #12c2ee;
+    display:inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    color:#fff !important;
+    font-weight:bold;
+    font-size:14px;
+    text-decoration:none !important;
+    line-height:1;
+    text-transform: uppercase;
+    -webkit-transition:background-color 0.25s;
+    -moz-transition:background-color 0.25s;
+    transition:background-color 0.25s;
+    border-radius:20px 20px 20px 20px;
+}
+
+#login {
+    padding-top: 100px;
+    float:right;
+}

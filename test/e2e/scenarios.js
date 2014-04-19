@@ -82,7 +82,7 @@ describe('my app', function() {
         });
     });
 
-    describe('hello-protractor', function (){
+    describe('Title for Gymnasium App', function (){
 
         beforeEach(function() {
             browser.get('index.html');

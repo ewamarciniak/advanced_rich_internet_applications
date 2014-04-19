@@ -34,10 +34,53 @@ describe('my app', function() {
 
     it('should render view2 when user navigates to /view2', function() {
       expect(element.all(by.css('[ng-view] h4')).first().getText()).
-        toMatch(/Find me in Partial 2/);
+        toMatch(/Listing commodities \(Json\)/);
     });
 
   });
+
+
+   describe('view3', function() {
+
+        beforeEach(function() {
+            browser.get('index.html#/view3');
+        });
+
+
+        it('should render view3 when user navigates to /view3', function() {
+            expect(element.all(by.css('[ng-view] h3')).first().getText()).
+                toMatch(/Find Our Gymnasium Locations/);
+        });
+
+   });
+
+    describe('view4', function() {
+
+        beforeEach(function() {
+            browser.get('index.html#/view4');
+        });
+
+
+        it('should render view3 when user navigates to /view4', function() {
+            expect(element.all(by.css('[ng-view] h4')).first().getText()).
+                toMatch(/Find me in Partial 4/);
+        });
+
+    });
+
+
+    describe('view5', function() {
+
+        beforeEach(function() {
+            browser.get('index.html#/view5');
+        });
+
+
+        it('should render view3 when user navigates to /view5', function() {
+            expect(element.all(by.css('[ng-view] h4')).first().getText()).
+                toMatch(/Find me in Partial 5/);
+        });
+    });
 
     describe('hello-protractor', function (){
 

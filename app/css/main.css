@@ -305,3 +305,8 @@ canvas
         page-break-after: avoid;
     }
 }
+#chartContainer_1, #chartContainer_2, #chartContainer_3{
+    height:400px;
+    width:100%;
+    position: relative;
+}

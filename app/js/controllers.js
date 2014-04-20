@@ -81,9 +81,9 @@ angular.module('myApp.controllers', [])
                 title:{
                     text: "Exercise type [%]",
                     fontWeight: "bolder",
-                    fontColor: "#008B8B",
+                    fontColor: "#0D8AAA",
                     fontFamily: "tahoma",
-                    fontSize: 25,
+                    fontSize: 20,
                     padding: 10
                 },
                 data: [//array of dataSeries
@@ -111,9 +111,9 @@ angular.module('myApp.controllers', [])
                 title:{
                     text: " Total Workout [min]",
                     fontWeight: "bolder",
-                    fontColor: "#008B8B",
+                    fontColor: "#0D8AAA",
                     fontFamily: "tahoma",
-                    fontSize: 25,
+                    fontSize: 20,
                     padding: 10
                 },
                 data: [//array of dataSeries
@@ -141,9 +141,9 @@ angular.module('myApp.controllers', [])
                 title:{
                     text: "Total calories burned [kcal]",
                     fontWeight: "bolder",
-                    fontColor: "#008B8B",
+                    fontColor: "#0D8AAA",
                     fontFamily: "tahoma",
-                    fontSize: 25,
+                    fontSize: 20,
                     padding: 10
                 },
 

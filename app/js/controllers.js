@@ -21,11 +21,7 @@ angular.module('myApp.controllers', ['ngSanitize'])
         $scope.markup = function(arg) {return arg + 0.45 * arg};
 
 
-    })
-
-
-    .controller('MyCtrl3', function($scope) {
-
+    }).controller('MyCtrl3', function($scope) {
         //Partial Three code Goes Here
         //alert('hello from partial Three')
 
@@ -51,7 +47,9 @@ angular.module('myApp.controllers', ['ngSanitize'])
 
 
                     if (address == gymlocations[0]) {
-                        document.getElementById('l1').innerHTML = gymlocations[0] + 'Tel: 01-2323456';
+
+                        //$scope.myHTMLone= gymlocations[0] + 'Tel: 01-2323456';
+                        document.getElementById('l1').innerHTML = gymlocations[0]+ 'Tel: 01-2323456';
 
                     }
                     if (address == gymlocations[1]) {
@@ -71,17 +69,19 @@ angular.module('myApp.controllers', ['ngSanitize'])
 
         FindLocation();
 
-
-        $scope.jourz = function () {
+        $scope.jourz = function() {
 
             FindLocation();
-            return false;
 
-        }
+        };
 
-    })
-        
-    .controller('MyCtrl4', [function() {
+        /*document.getElementById('Button1').addEventListener('click',function () {
+
+         FindLocation();
+         return false;
+         }, false);*/
+
+    }).controller('MyCtrl4', [function() {
 
         //Partial Four code Goes Here
 
@@ -199,7 +199,9 @@ angular.module('myApp.controllers', ['ngSanitize'])
 
 
 
+
     }]).controller('MyCtrl5', function () {
+
 
 
         //Partial five code Goes Here

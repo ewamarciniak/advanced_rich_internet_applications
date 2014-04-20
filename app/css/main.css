@@ -110,6 +110,13 @@ ul {
     list-style: none;
 }
 
+canvas
+{
+    top:0;
+    left:0;
+    margin: 0px auto;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -297,4 +304,9 @@ ul {
     h3 {
         page-break-after: avoid;
     }
+}
+#chartContainer_1, #chartContainer_2, #chartContainer_3{
+    height:400px;
+    width:100%;
+    position: relative;
 }

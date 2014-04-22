@@ -11,7 +11,7 @@ body{
 
 a, a:visited {
     outline:none;
-    color:#389dc1;
+    color: #2c373b;
 }
 
 a:hover{
@@ -27,19 +27,34 @@ section, footer, header, aside, nav{
 --------------------------*/
 
 nav{
-    display:inline-block;
-    margin:60px auto 45px;
-    background-color:#5597b4;
+    margin:0 auto;
+    padding:8px 0 !important;
+    background-color: #2c373b;
     box-shadow:0 1px 1px #ccc;
     border-radius:2px;
+    width: auto;
+}
+
+div #logo
+{
+    background: url(../img/logo.png) no-repeat;
+    width:250px; height:80px;
+    background-size:100% 100%;
+    -webkit-background-size:100% 100%;
+    -moz-background-size:100% 100%;
+    top:-8px;
+    left:-8px;
+    padding:0;
+    margin: 0;
+    z-index:10;
 }
 
 nav a{
     display:inline-block;
-    padding: 18px 30px;
+    padding: 10px 30px;
     color:#fff !important;
     font-weight:bold;
-    font-size:16px;
+    font-size:14px;
     text-decoration:none !important;
     line-height:1;
     text-transform: uppercase;
@@ -48,21 +63,23 @@ nav a{
     -webkit-transition:background-color 0.25s;
     -moz-transition:background-color 0.25s;
     transition:background-color 0.25s;
+    border-radius:20px 20px 20px 20px;
 }
 
 nav a:first-child{
-    border-radius:2px 0 0 2px;
+    border-radius:20px 20px 20px 20px;
 }
 
 nav a:last-child{
-    border-radius:0 2px 2px 0;
+    border-radius:20px 20px 20px 20px;
 }
 
 nav.home .home,
-nav.projects .projects,
-nav.services .services,
-nav.contact .contact{
-    background-color:#e35885;
+nav.partialTwo .partialTwo,
+nav.partialThree .partialThree,
+nav.partialFour .partialFour,
+nav.partialFive .partialFive{
+    background-color: #12c2ee;
 }
 
 p{

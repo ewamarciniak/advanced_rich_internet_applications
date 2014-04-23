@@ -3,20 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "advanced_rich_internet_applications", "http://localhost:55496", "{E8EDE76F-A131-4EF0-9343-CCFC1F123A31}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "advanced_rich_internet_applications(1)", "http://localhost:60514", "{A8AB92AD-C125-4D0B-8B20-723B4BACFB70}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_55496"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_60514"
 		Debug.AspNetCompiler.PhysicalPath = "..\advanced_rich_internet_applications\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55496\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60514\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_55496"
+		Release.AspNetCompiler.VirtualPath = "/localhost_60514"
 		Release.AspNetCompiler.PhysicalPath = "..\advanced_rich_internet_applications\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55496\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60514\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
@@ -29,8 +29,8 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E8EDE76F-A131-4EF0-9343-CCFC1F123A31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E8EDE76F-A131-4EF0-9343-CCFC1F123A31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8AB92AD-C125-4D0B-8B20-723B4BACFB70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8AB92AD-C125-4D0B-8B20-723B4BACFB70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

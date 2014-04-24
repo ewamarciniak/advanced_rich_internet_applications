@@ -12,13 +12,16 @@ angular.module('myApp.controllers', ['ngSanitize'])
    })
     .controller('MyCtrl2', function($scope, $http) {
 
-        $http.get('./skepticsCommodities.json').success(function(data) {
-            $scope.commodities = data;
+        $http.get('./gymCoaches.json').success(function(data) {
+            $scope.coachList = data;
         });
 
         $scope.orderProp = 'name';
-        $scope.orderPropAlt = 'email';
-        $scope.markup = function(arg) {return arg + 0.45 * arg};
+        //$scope.orderPropAlt = 'email';
+
+        $scope.myFirstName = function(string) {
+            return  string.split(' ')[0]
+        }
 
 
     }).controller('MyCtrl3', function($scope) {
@@ -210,11 +213,16 @@ angular.module('myApp.controllers', ['ngSanitize'])
 
 
 
+
     }).controller('MyCtrl6', function () {
         //controller six
 
     }).controller('MyCtrl7', function () {
         //controller seven  ADMIN
-    })
-
-
+    }).filter('nfcurrency', [ '$filter', '$locale', function ($filter, $locale) {
+        var currency = $filter('currency'), formats = $locale.NUMBER_FORMATS;
+        return function (amount, symbol) {
+            var value = currency(amount, symbol);
+            return value.replace(new RegExp('\\' + formats.DECIMAL_SEP + '\\d{2}'), '')
+        }
+    }]);

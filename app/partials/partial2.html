@@ -1,48 +1,52 @@
-<h4>Find an Instructor</h4>
-
+<h4>Find a Gym Coach</h4>
 <div>
     <div class="row">
         <div class="-4u 6u">
             <!--Search Functionality-->
-
-            <h4>Search</h4> <input ng-model="query"
-                                   placeholder="Search"
-                                   id="ngsearch"
-                                   > </br> </br>
+            <input ng-model="query"
+                   placeholder="Search"
+                   id="ngsearch">
+            </br> </br>
             <h4>Sort by</h4>
             <select ng-model="orderProp">
                 <option value="name">Alphabetical</option>
                 <option value="price">Lowest Price</option>
                 <option value="-price">Highest Price</option>
                 <option value="category">Category</option>
-
+                <option value="coachemail">Email address</option>
                 <option value="-created_at">Created at</option>
                 <option value="-updated_at">Updated at</option>
                 <option value="-id">id</option>
-
             </select>
         </div>
 
         <div class="row">
-          <div class="-4u 8u">
-            <!--Table of Products--><div>Product Listing</div>
-            <ul>
-                <li class="jsonli" ng-repeat="product in commodities | filter:query | orderBy:orderProp">
+            <div class="-4u 8u">
+                <!--Table of Products-->
+                <ul>
+                    <li class="jsonli"
+                        ng-repeat="coach in coachList | filter:query | orderBy:orderProp"
+                        ng-class-odd="myclass">
 
-                    <table class="jsonTable">
-                        <tr>
-
-                            <td title="Name">
-                                {{product.name}}
-                            </td>
-                            <td>{{(product.price) | currency:"&euro;"}}</td>
-                            <td title="Sales Price">{{ markup(product.price) | currency:"&euro;" }}</td>
-                            <td title="Category">{{product.category}}</td>
-                        </tr>
-                   </table>
-                </li>
-            </ul>
-          </div>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td title="image">
+                                    <figure><img ng-src="./img/{{coach.image_url}} ">
+                                    <figcaption>{{myFirstName(coach.name)}}</figcaption>
+                                    </figure>
+                                </td>
+                                <td>{{coach.category}}</td>
+                                <td>{{coach.name}}</td>
+                                <td>{{coach.description}}</td>
+                                <td>{{coach.price | nfcurrency:"&euro;" }}/hr</td>
+                                <td>{{coach.coachemail}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>

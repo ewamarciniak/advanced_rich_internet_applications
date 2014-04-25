@@ -17,7 +17,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "app(1)", "http://localhost:
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_56786"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\..\..\advanced_rich_internet_applications\app\"
+		Debug.AspNetCompiler.PhysicalPath = "..\app\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56786\"
 >>>>>>> removed php:app/localhost_55496.sln
 		Debug.AspNetCompiler.Updateable = "true"
@@ -30,7 +30,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "app(1)", "http://localhost:
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60514\"
 =======
 		Release.AspNetCompiler.VirtualPath = "/localhost_56786"
-		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\..\..\advanced_rich_internet_applications\app\"
+		Release.AspNetCompiler.PhysicalPath = "..\app\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56786\"
 >>>>>>> removed php:app/localhost_55496.sln
 		Release.AspNetCompiler.Updateable = "true"
@@ -38,10 +38,14 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "app(1)", "http://localhost:
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 <<<<<<< HEAD:localhost_55496.sln
+<<<<<<< HEAD:localhost_55496.sln
 		SlnRelativePath = "..\advanced_rich_internet_applications\"
 =======
 		SlnRelativePath = "..\..\..\..\..\..\advanced_rich_internet_applications\app\"
 >>>>>>> removed php:app/localhost_55496.sln
+=======
+		SlnRelativePath = "..\app\"
+>>>>>>> first commit:app/localhost_55496.sln
 	EndProjectSection
 EndProject
 Global

@@ -1,21 +1,21 @@
 'use strict';
 /* Controllers */
 angular.module('myApp.controllers', [])
-  .controller('MyCtrl1', [function() {
+  .controller('MyCtrl1', [function () {
 
-        //Partial One code Goes Here
+      //Partial One code Goes Here
 
-        //alert('hello from partial One')
+      //alert('hello from partial One')
 
-   }])
-    .controller('MyCtrl2', [function() {
+  }])
+    .controller('MyCtrl2', [function () {
 
         //Partial Two code Goes Here
 
         //alert('hello from partial Two')
 
     }])
-    .controller('MyCtrl3', [function() {
+    .controller('MyCtrl3', [function () {
         //Partial Three code Goes Here
 
         //alert('hello from partial Three')
@@ -42,7 +42,7 @@ angular.module('myApp.controllers', [])
 
 
                     if (address == gymlocations[0]) {
-                        document.getElementById('l1').innerHTML = gymlocations[0]+ 'Tel: 01-2323456';
+                        document.getElementById('l1').innerHTML = gymlocations[0] + 'Tel: 01-2323456';
 
                     }
                     if (address == gymlocations[1]) {
@@ -62,23 +62,23 @@ angular.module('myApp.controllers', [])
 
         FindLocation();
 
-       document.getElementById('Button1').addEventListener('click',function () {
+        document.getElementById('Button1').addEventListener('click', function () {
 
             FindLocation();
             return false;
-       }, false);
+        }, false);
 
 
     }])
-    .controller('MyCtrl4', [function() {
+    .controller('MyCtrl4', [function () {
 
         //Partial Four code Goes Here
 
         //alert('hello from partial Four')
-       function WorkoutStatistics() {
+        function WorkoutStatistics() {
             var chart1 = new CanvasJS.Chart("chartContainer_1", {
                 theme: "theme1",
-                title:{
+                title: {
                     text: "Exercise type [%]",
                     fontWeight: "bolder",
                     fontColor: "#0D8AAA",
@@ -94,11 +94,11 @@ angular.module('myApp.controllers', [])
                         indexLabelPlacement: "outside",
                         showInLegend: true,
                         dataPoints: [
-                            { label: "step class", y: 18, name: "step class"},
+                            { label: "step class", y: 18, name: "step class" },
                             { label: "treadmil", y: 29, name: "treadmil" },
                             { label: "pilates class", y: 40, name: "pilates class" },
                             { label: "weight lifting", y: 34, name: "weight lifting" },
-                            { label: "zumba class", y: 24, name:"zumba class"  }
+                            { label: "zumba class", y: 24, name: "zumba class" }
                         ]
                     }
                 ]
@@ -108,7 +108,7 @@ angular.module('myApp.controllers', [])
 
             var chart2 = new CanvasJS.Chart("chartContainer_2", {
                 theme: "theme1",
-                title:{
+                title: {
                     text: " Total Workout [min]",
                     fontWeight: "bolder",
                     fontColor: "#0D8AAA",
@@ -138,7 +138,7 @@ angular.module('myApp.controllers', [])
 
                 theme: "theme1",
 
-                title:{
+                title: {
                     text: "Total calories burned [kcal]",
                     fontWeight: "bolder",
                     fontColor: "#0D8AAA",
@@ -177,7 +177,7 @@ angular.module('myApp.controllers', [])
                     }
                 ],
                 /** Set axisY properties here*/
-                axisY:{
+                axisY: {
                     suffix: "kcal"
                 }
             });
@@ -189,12 +189,28 @@ angular.module('myApp.controllers', [])
 
 
 
-    }]).controller('MyCtrl5', function() {
+    }]).controller('MyCtrl5', function () {
 
         //Partial five code Goes Here
 
         //alert('hello from partial Five')
-});
+
+
+    }).controller('MyCtrl6', function () {
+        //controller six
+
+    }).controller('MyCtrl7', function () {
+        //controller seven  ADMIN
+
+
+    }).controller('MyCtrl8', function () {
+        //controller eight  ADMIN2
+
+    });
+
+
+
+
 
 
 

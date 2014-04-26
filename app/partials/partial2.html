@@ -1,3 +1,74 @@
 
-<h4>Find me in Partial 2</h4>
+<!DOCTYPE>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <div>
+        <h1>MEMBERS PAGE </h1>
+    </div>
+</body>
+</html>
+<?php
+session_start();
+?>
+<?php
+session_start();
+if (!isset($_SESSION['username']))
+{
+   header('Location: ./login.php');
+   exit;
+}
+?>
+<?php
+if ($_SERVER['REQUEST_METHOD'] == 'POST')
+{
+   session_start();
+   unset($_SESSION['username']);
+   //unset($_SESSION['id']);
+
+   //header('Location: http://www.uropa.com');
+   exit;
+}
+?>
+
+
+
+<h3>Hello</h3>
+<?php
+if (isset($_SESSION['username']))
+{
+// log into db
+$host = "journalfrance.db.9939749.hostedresource.com";
+$user = "journalfrance";
+$pass = "Gymfit!6";
+$database = "journalfrance";
+$linkID = mysql_connect($host, $user, $pass) or die("Could not connect to host.");
+mysql_select_db($database, $linkID) or die("Could not find database.");
+
+
+
+  echo $_SESSION['username'];
+  echo $_SESSION['ID'];
+
+
+
+
+   ?></br>
+<?php
+   $sth = mysql_query("SELECT  * FROM totalcalories");
+$rows = array();
+while($r = mysql_fetch_assoc($sth)) {
+   $rows[] = $r;
+}
+print json_encode($rows);
+
+
+}
+else
+{
+   echo 'Not logged in';
+}
+?>
 

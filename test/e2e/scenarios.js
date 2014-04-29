@@ -1,28 +1,25 @@
 'use strict';
 
-/* https://github.com/angular/protractor/blob/master/docs/getting-started.md */
-
 describe('my app', function() {
 
     browser.get('index.html');
 
     it('should automatically redirect to /view1 when location hash/fragment is empty', function() {
-        expect(browser.getLocationAbsUrl()).toMatch("/view1");
+        expect(browser.getLocationAbsUrl()).toMatch('view1');
     });
 
-    describe('view1', function() {
+/*    describe('view1', function() {
 
         beforeEach(function() {
             browser.get('index.html#/view1');
         });
-
 
         it('should render view1 when user navigates to /view1', function() {
             expect(element.all(by.css('[ng-view] h1')).first().getText()).
                 toMatch(/Welcome to the Gymnasium App/);
         });
 
-    });
+    });*/
 
     describe('view2', function() {
 
@@ -30,10 +27,9 @@ describe('my app', function() {
             browser.get('index.html#/view2');
         });
 
-
         it('should render view2 when user navigates to /view2', function() {
             expect(element.all(by.css('[ng-view] h4')).first().getText()).
-                toMatch(/Find an Instructor/);
+                toMatch(/Find a Gym Coach/);
         });
 
     });
@@ -60,8 +56,8 @@ describe('my app', function() {
 
 
         it('should render view4 when user navigates to /view4', function() {
-            expect(element.all(by.css('[ng-view] h4')).first().getText()).
-                toMatch(/Find me in Partial 4/);
+            expect(element.all(by.css('[ng-view] h1')).first().getText()).
+                toMatch(/Your Exercise Statistics/);
         });
 
     });
@@ -69,13 +65,13 @@ describe('my app', function() {
     describe('view5', function() {
 
         beforeEach(function() {
-            browser.get('index.html#/view4');
+            browser.get('index.html#/view5');
         });
 
 
         it('should render view5 when user navigates to /view5', function() {
-            expect(element.all(by.css('[ng-view] h4')).first().getText()).
-                toMatch(/Find me in Partial 4/);
+            expect(element.all(by.css('[ng-view] iframe')).first().getText()).
+                toMatch('');
         });
 
     });
@@ -95,23 +91,38 @@ describe('my app', function() {
         });
     });
 
-
     describe('ng-bind-html', function (){
 
         beforeEach(function() {
-            browser.get('index.html#/view4');
+            browser.get('index.html#/view2');
         });
 
-        describe("bonnie caption", function () {
+        describe("sort options", function () {
 
             it('should check ng-bind-html', function() {
-                expect(element(by.binding('myHTML')).getText()).toBe(
-                    'I have been added using ng-bind-html');
+                expect(element(by.binding('HTMLalpha')).getText()).toBe(
+                    'Alphabetical');
+                expect(element(by.binding('HTMLlowestPrice')).getText()).toBe(
+                    'Lowest Price');
+                expect(element(by.binding('HTMLhighestPrice')).getText()).toBe(
+                    'Highest Price');
+                expect(element(by.binding('HTMLCategory')).getText()).toBe(
+                    'Category');
+                expect(element(by.binding('HTMLemail')).getText()).toBe(
+                    'Email');
+                expect(element(by.binding('HTMLcreated_at')).getText()).toBe(
+                    'Created At');
+                expect(element(by.binding('HTMLupdatedAt')).getText()).toBe(
+                    'Updated At');
+                expect(element(by.binding('HTMLemail')).getText()).toBe(
+                    'Email');
+
+
+
+
+
             });
 
         });
     });
-
-
-
 });

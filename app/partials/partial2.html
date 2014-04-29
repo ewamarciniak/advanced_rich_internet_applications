@@ -9,14 +9,14 @@
             </br> </br>
             <h4>Sort by</h4>
             <select ng-model="orderProp">
-                <option value="name">Alphabetical</option>
-                <option value="price">Lowest Price</option>
-                <option value="-price">Highest Price</option>
-                <option value="category">Category</option>
-                <option value="coachemail">Email address</option>
-                <option value="-created_at">Created at</option>
-                <option value="-updated_at">Updated at</option>
-                <option value="-id">id</option>
+                <option value="name" ng-bind-html="HTMLalpha"></option>
+                <option value="price" ng-bind-html="HTMLlowestPrice"></option>
+                <option value="-price" ng-bind-html="HTMLhighestPrice"></option>
+                <option value="category" ng-bind-html="HTMLCategory"></option>
+                <option value="coachemail" ng-bind-html="HTMLemail"></option>
+                <option value="-created_at" ng-bind-html="HTMLcreated_at"></option>
+                <option value="-updated_at" ng-bind-html="HTMLupdatedAt"></option>
+                <option value="-id" ng-bind-html="HTMLid"></option>
             </select>
         </div>
 

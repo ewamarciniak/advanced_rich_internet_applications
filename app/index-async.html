@@ -28,11 +28,14 @@
       'js/angular.js',
       'js/angular-route.js',
       'js/app.js',
-
+      'js/canvas-charts.js',
       'js/services.js',
       'js/controllers.js',
       'js/filters.js',
-      'js/directives.js'
+      'js/directives.js',
+      'js/googlemap.js',
+      'js/location.js'
+
     ], function() {
       // when all is done, execute bootstrap angular application
       angular.bootstrap(document, ['myApp']);
@@ -43,8 +46,11 @@
 </head>
 <body ng-cloak>
   <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
+    <li><a href="#/app/view1" ng-click="active='home'" class="home">Home</a></li>
+    <li><a href="#/view2" ng-click="active='partialTwo'" class="partialTwo">Find a Coach</a></li>
+    <li><a href="#/view3" ng-click="active='partialThree'" class="partialThree">Gym Locations</a></li>
+    <li><a href="#/view4" ng-click="active='partialFour'" class="partialFour">Workout Statistics</a></li>
+    <li><a href="#/view5" ng-click="active='partialFive'" class="partialFive">Calendar</a></li>
   </ul>
 
   <div ng-view></div>

@@ -1,0 +1,102 @@
+{
+    "container_1": [
+
+        {
+            "label": "step class",
+            "y": 18,
+            "name": "step class"
+        },
+        {
+            "label": "treadmil",
+            "y": 29,
+            "name": "treadmil"
+        },
+        {
+            "label": "pilates class",
+            "y": 40,
+            "name": "pilates class"
+        },
+        {
+            "label": "weight lifting",
+            "y": 34,
+            "name": "weight lifting"
+        },
+        {
+            "label": "zumba class",
+            "y": 24,
+            "name": "zumba class"
+        }
+    ],
+
+    "container_2": [
+        {
+            "label": "step class",
+            "y": 18
+        },
+        {
+            "label": "treadmil",
+            "y": 29
+        },
+        {
+            "label": "pilates class",
+            "y": 40
+        },
+        {
+            "label": "weight lifting",
+            "y": 34
+        },
+        {
+            "label": "zumba class",
+            "y": 24
+        }
+    ],
+    "container_3": {
+        "dataset_1": [
+            {
+                "label": "January",
+                "y": 4500
+            },
+            {
+                "label": "February",
+                "y": 3250
+            },
+            {
+                "label": "March",
+                "y": 4000
+            },
+            {
+                "label": "April",
+                "y": 3740
+            },
+            {
+                "label": "May",
+                "y": 2400
+            }
+        ],
+        "dataset_2": [
+            {
+                "label": "January",
+                "y": 5400
+            },
+            {
+                "label": "February",
+                "y": 3100
+            },
+            {
+                "label": "March",
+                "y": 2870
+            },
+            {
+                "label": "April",
+                "y": 3400
+            },
+            {
+                "label": "May",
+                "y": 2380
+            }
+        ]
+    }
+}
+
+
+

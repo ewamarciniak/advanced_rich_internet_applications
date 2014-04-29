@@ -1,6 +1,5 @@
 <h1>Find Our Gymnasium Locations</h1><br/>
 <div class="row">
-
     <div class="-4u 6u">
         <h3>Find Our Gymnasium Locations</h3><br />
         <div>
@@ -12,31 +11,20 @@
                 <option value="Ennis Road,Limerick">Ennis Road,Limerick</option>
                 <option value="Rindoon Park, Athlone">Rindoon Park, Athlone</option>
                 <option value="Scarlett Street, Drogheda">Scarlett Street, Drogheda</option>
-
             </select>
         </div>
         <div>
-            <input id="Button1" type="button" value="Find" class="button success" />
+            <input id="Button1" type="button" value="Find" class = "button success" ng-click="jourz()" ng-model="name"/>
         </div>
-
-    </div>
-</div>
-
-<div class="4u">
-    <div id="l1">
-        <!-- this is for the location and the phone number-->
+    <div id="l1"></div>
+        <h3>Find Our Gymnasium Locations</h3><br/>
     </div>
 </div>
 <div class="row">
-    <div class="-1u 11u">
-
+    <div class="-5u 4u">
         <div id="map" style="height: 250px; width: 350px;"></div>
     </div>
 </div>
-
-
-
-
 <!-- Footer -->
 <div id="footer">
     &copy; BodyLine Gym. All rights reserved.

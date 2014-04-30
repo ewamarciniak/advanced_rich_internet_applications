@@ -8,7 +8,7 @@
                    id="ngsearch">
             </br> </br>
             <h4>Sort by</h4>
-            <select ng-model="orderProp">
+            <select ng-model="orderProp" id = "thomas">
                 <option value="name" ng-bind-html="HTMLalpha"></option>
                 <option value="price" ng-bind-html="HTMLlowestPrice"></option>
                 <option value="-price" ng-bind-html="HTMLhighestPrice"></option>
@@ -33,7 +33,7 @@
                             <tr>
                                 <td title="image">
                                     <figure><img ng-src="./img/{{coach.image_url}} ">
-                                    <figcaption>{{myFirstName(coach.name)}}</figcaption>
+                                    <figcaption id = "figcaption">{{myFirstName(coach.name)}}</figcaption>
                                     </figure>
                                 </td>
                                 <td>{{coach.category}}</td>

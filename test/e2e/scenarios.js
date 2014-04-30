@@ -116,13 +116,91 @@ describe('my app', function() {
                     'Updated At');
                 expect(element(by.binding('HTMLemail')).getText()).toBe(
                     'Email');
-
-
-
-
-
             });
 
         });
     });
+
+    describe('ng-click functions', function (){
+
+        beforeEach(function() {
+            browser.get('index.html#/view3');
+        });
+
+        describe("Google maps function", function () {
+
+            it('should show correct text for gym location ', function() {
+
+                var  ptor = protractor.getInstance();
+
+                //This will not get the option required
+
+                expect(ptor.element(by.css('#l1')).getText()).toMatch('Cork Street');
+
+                ptor.findElement(protractor.By.css('#addressinput option:nth-child(2)')).click();
+                ptor.findElement(protractor.By.css('#Button1')).click();
+                expect(ptor.findElement(protractor.By.css('#l1')).getText()).toMatch('Quarry Road');
+                expect(ptor.findElement(protractor.By.css('#map')).getText()).not.toMatch('');
+
+                ptor.findElement(protractor.By.css('#addressinput option:nth-child(3)')).click();
+                ptor.findElement(protractor.By.css('#Button1')).click();
+                expect(ptor.findElement(protractor.By.css('#l1')).getText()).toMatch('Bishopstown Road');
+
+                ptor.findElement(protractor.By.css('#addressinput option:nth-child(4)')).click();
+                ptor.findElement(protractor.By.css('#Button1')).click();
+                expect(ptor.findElement(protractor.By.css('#l1')).getText()).toMatch('Henry Street');
+
+                ptor.findElement(protractor.By.css('#addressinput option:nth-child(5)')).click();
+                ptor.findElement(protractor.By.css('#Button1')).click();
+                expect(ptor.findElement(protractor.By.css('#l1')).getText()).toMatch('Ennis Road');
+
+                ptor.findElement(protractor.By.css('#addressinput option:nth-child(6)')).click();
+                ptor.findElement(protractor.By.css('#Button1')).click();
+                expect(ptor.findElement(protractor.By.css('#l1')).getText()).toMatch('Rindoon Park');
+
+                ptor.findElement(protractor.By.css('#addressinput option:nth-child(7)')).click();
+                ptor.findElement(protractor.By.css('#Button1')).click();
+                expect(ptor.findElement(protractor.By.css('#l1')).getText()).toMatch('Scarlett Street, Drogheda');
+            });
+
+        });
+    });
+
+    describe('Search Functionality', function (){
+
+        beforeEach(function() {
+            browser.get('index.html#/view2');
+        });
+
+        describe('Dynamic Search Box', function () {
+
+            it('should change the name of the figure caption', function() {
+
+                var  ptor = protractor.getInstance();
+
+                //This will not get the option required
+
+                ptor.findElements(protractor.By.repeater("coach in coachList"));
+
+                expect(ptor.findElement(protractor.By.css('#figcaption')).getText()).toMatch('Ben');
+                expect(ptor.findElement(protractor.By.css('#figcaption')).getText()).not.toMatch('Ben Dunne');
+
+                ptor.findElement(protractor.By.css('#thomas option:nth-child(2)')).click();
+
+                expect(ptor.findElement(protractor.By.css('#figcaption')).getText()).toMatch('George');
+                expect(ptor.findElement(protractor.By.css('#figcaption')).getText()).not.toMatch('George Best');
+
+                ptor.findElement(protractor.By.id("ngsearch")).sendKeys('mary');
+                expect(ptor.findElement(protractor.By.css('#figcaption')).getText()).toMatch('Mary');
+
+                ptor.findElement(protractor.By.id("ngsearch")).clear();
+                ptor.findElement(protractor.By.id("ngsearch")).sendKeys('bonnie');
+                expect(ptor.findElement(protractor.By.css('#figcaption')).getText()).toMatch('Bonnie');
+                expect(ptor.findElement(protractor.By.css('#figcaption')).getText()).not.toMatch('Bonnie Dowling');
+
+            });
+        });
+    });
+
+
 });

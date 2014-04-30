@@ -176,7 +176,7 @@ function $RouteProvider(){
     * Normalizes the given path, returning a regular expression
     * and the original path.
     *
-    * Inspired by pathRexp in visionmedia/express/lib/utils.js.
+    * Inspired by pathRexp in visionmedia/express/lib/utils.js_old.
     */
   function pathRegExp(path, opts) {
     var insensitive = opts.caseInsensitiveMatch,
@@ -274,7 +274,7 @@ function $RouteProvider(){
      * to get it working on jsfiddle as well.
      *
      * <example name="$route-service" module="ngRouteExample"
-     *          deps="angular-route.js" fixBase="true">
+     *          deps="angular-route.js_old" fixBase="true">
      *   <file name="index.html">
      *     <div ng-controller="MainController">
      *       Choose:
@@ -307,7 +307,7 @@ function $RouteProvider(){
      *     Chapter Id: {{params.chapterId}}
      *   </file>
      *
-     *   <file name="script.js">
+     *   <file name="script.js_old">
      *     angular.module('ngRouteExample', ['ngRoute'])
      *
      *      .controller('MainController', function($scope, $route, $routeParams, $location) {
@@ -351,7 +351,7 @@ function $RouteProvider(){
      *
      *   </file>
      *
-     *   <file name="protractor.js" type="protractor">
+     *   <file name="protractor.js_old" type="protractor">
      *     it('should load and compile correct template', function() {
      *       element(by.linkText('Moby: Ch1')).click();
      *       var content = element(by.css('[ng-view]')).getText();
@@ -459,7 +459,7 @@ function $RouteProvider(){
      * Check if the route matches the current url.
      *
      * Inspired by match in
-     * visionmedia/express/lib/router/router.js.
+     * visionmedia/express/lib/router/router.js_old.
      */
     function switchRouteMatcher(on, route) {
       var keys = route.keys,
@@ -626,7 +626,7 @@ ngRouteModule.provider('$routeParams', $RouteParamsProvider);
  * Instead you can use `$route.current.params` to access the new route's parameters.
  *
  * @example
- * ```js
+ * ```js_old
  *  // Given:
  *  // URL: http://server.com/index.html#/Chapter/1/Section/2?search=moby
  *  // Route: /Chapter/:chapterId/Section/:sectionId
@@ -676,7 +676,7 @@ ngRouteModule.directive('ngView', ngViewFillContentFactory);
  *                    as an expression yields a truthy value.
  * @example
     <example name="ngView-directive" module="ngViewExample"
-             deps="angular-route.js;angular-animate.js"
+             deps="angular-route.js_old;angular-animate.js_old"
              animations="true" fixBase="true">
       <file name="index.html">
         <div ng-controller="MainCtrl as main">
@@ -757,7 +757,7 @@ ngRouteModule.directive('ngView', ngViewFillContentFactory);
         }
       </file>
 
-      <file name="script.js">
+      <file name="script.js_old">
         angular.module('ngViewExample', ['ngRoute', 'ngAnimate'])
           .config(['$routeProvider', '$locationProvider',
             function($routeProvider, $locationProvider) {
@@ -793,7 +793,7 @@ ngRouteModule.directive('ngView', ngViewFillContentFactory);
 
       </file>
 
-      <file name="protractor.js" type="protractor">
+      <file name="protractor.js_old" type="protractor">
         it('should load and compile correct template', function() {
           element(by.linkText('Moby: Ch1')).click();
           var content = element(by.css('[ng-view]')).getText();

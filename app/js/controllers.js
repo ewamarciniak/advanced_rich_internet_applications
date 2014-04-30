@@ -1,23 +1,33 @@
 'use strict';
 /* Controllers */
-angular.module('myApp.controllers', [])
-  .controller('MyCtrl1', [function () {
 
-      //Partial One code Goes Here
+angular.module('myApp.controllers', ['ngSanitize'])
 
-      //alert('hello from partial One')
+    .controller('MyCtrl1', function($scope) {
+        //Partial One code Goes Here
+        //alert('hello from partial One')
+    })
+    .controller('MyCtrl2', function($scope, $http) {
+        $http.get('./gymCoaches.json').success(function(data) {
+            $scope.coachList = data;
+        });
+        $scope.orderProp = 'name';
 
-  }])
-    .controller('MyCtrl2', [function () {
+        $scope.HTMLalpha="Alphabetical";
+        $scope.HTMLlowestPrice="Lowest Price";
+        $scope.HTMLhighestPrice="Highest Price";
+        $scope.HTMLCategory="Category";
+        $scope.HTMLemail="Email";
+        $scope.HTMLcreated_at="Created At";
+        $scope.HTMLupdatedAt="Updated At";
+        $scope.HTMLid="Id";
 
-        //Partial Two code Goes Here
-
-        //alert('hello from partial Two')
-
-    }])
-    .controller('MyCtrl3', [function () {
+        //$scope.orderPropAlt = 'email';
+        $scope.myFirstName = function(string) {
+            return  string.split(' ')[0]
+        }
+    }).controller('MyCtrl3', function($scope) {
         //Partial Three code Goes Here
-
         //alert('hello from partial Three')
 
         function FindLocation() {
@@ -40,9 +50,9 @@ angular.module('myApp.controllers', [])
                         position: results[0].geometry.location
                     });
 
-
                     if (address == gymlocations[0]) {
-                        document.getElementById('l1').innerHTML = gymlocations[0] + 'Tel: 01-2323456';
+
+                        document.getElementById('l1').innerHTML = gymlocations[0]+ 'Tel: 01-2323456';
 
                     }
                     if (address == gymlocations[1]) {
@@ -62,155 +72,125 @@ angular.module('myApp.controllers', [])
 
         FindLocation();
 
-        document.getElementById('Button1').addEventListener('click', function () {
-
+        $scope.jourz = function() {
             FindLocation();
-            return false;
-        }, false);
+        };
 
+        /*document.getElementById('Button1').addEventListener('click',function () {
 
-    }])
-    .controller('MyCtrl4', [function () {
+         FindLocation();
+         return false;
+         }, false);*/
 
-        //Partial Four code Goes Here
+    }).controller('MyCtrl4', function($scope, $http) {
 
-        //alert('hello from partial Four')
-        function WorkoutStatistics() {
-            var chart1 = new CanvasJS.Chart("chartContainer_1", {
-                theme: "theme1",
-                title: {
-                    text: "Exercise type [%]",
-                    fontWeight: "bolder",
-                    fontColor: "#0D8AAA",
-                    fontFamily: "tahoma",
-                    fontSize: 20,
-                    padding: 10
-                },
-                data: [//array of dataSeries
-                    { //dataSeries object
+        //$scope.workout_data = null;
+        $http.get('./workout_data_1.json').success(function (result) {
+                $scope.workout_data = result;
+                function WorkoutStatistics() {
 
-                        /*** Change type "column" to "bar", "area", "line" or "pie"***/
-                        type: "doughnut",
-                        indexLabelPlacement: "outside",
-                        showInLegend: true,
-                        dataPoints: [
-                            { label: "step class", y: 18, name: "step class" },
-                            { label: "treadmil", y: 29, name: "treadmil" },
-                            { label: "pilates class", y: 40, name: "pilates class" },
-                            { label: "weight lifting", y: 34, name: "weight lifting" },
-                            { label: "zumba class", y: 24, name: "zumba class" }
+                    var chart1 = new CanvasJS.Chart("chartContainer_1", {
+                        theme: "theme1",
+                        title: {
+                            text: "Exercise type [%]",
+                            fontWeight: "bolder",
+                            fontColor: "#0D8AAA",
+                            fontFamily: "tahoma",
+                            fontSize: 20,
+                            padding: 10
+                        },
+                        data: [//array of dataSeries
+                            { //dataSeries object
+
+                                /*** Change type "column" to "bar", "area", "line" or "pie"***/
+                                type: "doughnut",
+                                indexLabelPlacement: "outside",
+                                showInLegend: true,
+                                dataPoints: $scope.workout_data['container_1']
+                            }
                         ]
-                    }
-                ]
-            });
-            chart1.render();
-            chart1 = {};
+                    });
+                    chart1.render();
+                    chart1 = {};
 
-            var chart2 = new CanvasJS.Chart("chartContainer_2", {
-                theme: "theme1",
-                title: {
-                    text: " Total Workout [min]",
-                    fontWeight: "bolder",
-                    fontColor: "#0D8AAA",
-                    fontFamily: "tahoma",
-                    fontSize: 20,
-                    padding: 10
-                },
-                data: [//array of dataSeries
-                    { //dataSeries object
+                    var chart2 = new CanvasJS.Chart("chartContainer_2", {
+                        theme: "theme1",
+                        title: {
+                            text: " Total Workout [min]",
+                            fontWeight: "bolder",
+                            fontColor: "#0D8AAA",
+                            fontFamily: "tahoma",
+                            fontSize: 20,
+                            padding: 10
+                        },
+                        data: [//array of dataSeries
+                            { //dataSeries object
 
-                        /*** Change type "column" to "bar", "area", "line" or "pie"***/
-                        type: "bar",
-                        dataPoints: [
-                            { label: "step class", y: 18 },
-                            { label: "treadmil", y: 29 },
-                            { label: "pilates class", y: 40 },
-                            { label: "weight lifting", y: 34 },
-                            { label: "zumba class", y: 24 }
+                                /*** Change type "column" to "bar", "area", "line" or "pie"***/
+                                type: "bar",
+                                dataPoints:$scope.workout_data['container_2']
+
+                            }
                         ]
-                    }
-                ]
-            });
-            chart2.render();
-            chart2 = {};
+                    });
+                    chart2.render();
+                    chart2 = {};
 
-            var chart3 = new CanvasJS.Chart("chartContainer_3", {
+                    var chart3 = new CanvasJS.Chart("chartContainer_3", {
 
-                theme: "theme1",
+                        theme: "theme1",
 
-                title: {
-                    text: "Total calories burned [kcal]",
-                    fontWeight: "bolder",
-                    fontColor: "#0D8AAA",
-                    fontFamily: "tahoma",
-                    fontSize: 20,
-                    padding: 10
-                },
+                        title: {
+                            text: "Total calories burned [kcal]",
+                            fontWeight: "bolder",
+                            fontColor: "#0D8AAA",
+                            fontFamily: "tahoma",
+                            fontSize: 20,
+                            padding: 10
+                        },
 
-                data: [  //array of dataSeries
-                    { //dataSeries - first quarter
-                        /*** Change type "column" to "bar", "area", "line" or "pie"***/
-                        type: "column",
-                        name: "You",
-                        showInLegend: true,
-                        dataPoints: [
-                            { label: "January", y: 4500 },
-                            { label: "February", y: 3250 },
-                            { label: "March", y: 4000 },
-                            { label: "April", y: 3740 },
-                            { label: "May", y: 2400 }
-                        ]
-                    },
+                        data: [  //array of dataSeries
+                            { //dataSeries - first quarter
+                                /*** Change type "column" to "bar", "area", "line" or "pie"***/
+                                type: "column",
+                                name: "You",
+                                showInLegend: true,
+                                dataPoints: $scope.workout_data['container_3']['dataset_1']
+                            },
 
-                    { //dataSeries - second quarter
+                            { //dataSeries - second quarter
 
-                        type: "column",
-                        name: "Average user",
-                        showInLegend: true,
-                        dataPoints: [
-                            { label: "January", y: 5400 },
-                            { label: "February", y: 3100 },
-                            { label: "March", y: 2870 },
-                            { label: "April", y: 3400 },
-                            { label: "May", y: 2380 }
-                        ]
-                    }
-                ],
-                /** Set axisY properties here*/
-                axisY: {
-                    suffix: "kcal"
+                                type: "column",
+                                name: "Average user",
+                                showInLegend: true,
+                                dataPoints: $scope.workout_data['container_3']['dataset_2']
+                            }
+                        ],
+                        /** Set axisY properties here*/
+                        axisY: {
+                            suffix: "kcal"
+                        }
+                    });
+                    chart3.render();
+                    chart3 = {};
                 }
-            });
-            chart3.render();
-            chart3 = {};
-        }
 
-        WorkoutStatistics();
+                WorkoutStatistics();
+            }
+        );
 
-
-
-    }]).controller('MyCtrl5', function () {
-
+    }).controller('MyCtrl5', function () {
         //Partial five code Goes Here
-
         //alert('hello from partial Five')
-
-
     }).controller('MyCtrl6', function () {
         //controller six
 
     }).controller('MyCtrl7', function () {
         //controller seven  ADMIN
-
-
-    }).controller('MyCtrl8', function () {
-        //controller eight  ADMIN2
-
-    });
-
-
-
-
-
-
-
+    }).filter('nfcurrency', [ '$filter', '$locale', function ($filter, $locale) {
+        var currency = $filter('currency'), formats = $locale.NUMBER_FORMATS;
+        return function (amount, symbol) {
+            var value = currency(amount, symbol);
+            return value.replace(new RegExp('\\' + formats.DECIMAL_SEP + '\\d{2}'), '')
+        }
+    }]);

@@ -1,74 +1,55 @@
+<h4>Find a Gym Coach</h4>
+<div>
+    <div class="row">
+        <div class="-4u 6u">
+            <!--Search Functionality-->
+            <input ng-model="query"
+                   placeholder="Search"
+                   id="ngsearch">
+            </br> </br>
+            <h4>Sort by</h4>
+            <select ng-model="orderProp">
+                <option value="name" ng-bind-html="HTMLalpha"></option>
+                <option value="price" ng-bind-html="HTMLlowestPrice"></option>
+                <option value="-price" ng-bind-html="HTMLhighestPrice"></option>
+                <option value="category" ng-bind-html="HTMLCategory"></option>
+                <option value="coachemail" ng-bind-html="HTMLemail"></option>
+                <option value="-created_at" ng-bind-html="HTMLcreated_at"></option>
+                <option value="-updated_at" ng-bind-html="HTMLupdatedAt"></option>
+                <option value="-id" ng-bind-html="HTMLid"></option>
+            </select>
+        </div>
 
-<!DOCTYPE>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-    <div>
-        <h1>MEMBERS PAGE </h1>
+        <div class="row">
+            <div class="-4u 8u">
+                <!--Table of Products-->
+                <ul>
+                    <li class="jsonli"
+                        ng-repeat="coach in coachList | filter:query | orderBy:orderProp"
+                        ng-class-odd="myclass">
+
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td title="image">
+                                    <figure><img ng-src="./img/{{coach.image_url}} ">
+                                    <figcaption>{{myFirstName(coach.name)}}</figcaption>
+                                    </figure>
+                                </td>
+                                <td>{{coach.category}}</td>
+                                <td>{{coach.name}}</td>
+                                <td>{{coach.description}}</td>
+                                <td>{{coach.price | nfcurrency:"&euro;" }}/hr</td>
+                                <td>{{coach.coachemail}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-</body>
-</html>
-<?php
-session_start();
-?>
-<?php
-session_start();
-if (!isset($_SESSION['username']))
-{
-   header('Location: ./login.php');
-   exit;
-}
-?>
-<?php
-if ($_SERVER['REQUEST_METHOD'] == 'POST')
-{
-   session_start();
-   unset($_SESSION['username']);
-   //unset($_SESSION['id']);
-
-   //header('Location: http://www.uropa.com');
-   exit;
-}
-?>
+</div>
 
 
-
-<h3>Hello</h3>
-<?php
-if (isset($_SESSION['username']))
-{
-// log into db
-$host = "journalfrance.db.9939749.hostedresource.com";
-$user = "journalfrance";
-$pass = "Gymfit!6";
-$database = "journalfrance";
-$linkID = mysql_connect($host, $user, $pass) or die("Could not connect to host.");
-mysql_select_db($database, $linkID) or die("Could not find database.");
-
-
-
-  echo $_SESSION['username'];
-  echo $_SESSION['ID'];
-
-
-
-
-   ?></br>
-<?php
-   $sth = mysql_query("SELECT  * FROM totalcalories");
-$rows = array();
-while($r = mysql_fetch_assoc($sth)) {
-   $rows[] = $r;
-}
-print json_encode($rows);
-
-
-}
-else
-{
-   echo 'Not logged in';
-}
-?>
 

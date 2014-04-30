@@ -1,0 +1,134 @@
+[
+    {
+        "category": "Swimming",
+        "created_at": "2013-12-18T01:49:55Z",
+        "description": "Great ex-Manchester United footballer with a love for booze and women. May be drunk during the lesson",
+        "id": 1,
+        "coachemail": "george@gmail.com",
+        "image_url": "george_best_50.jpg",
+        "name": "George Best",
+        "price": 5,
+        "updated_at": "2013-12-18T11:36:04Z"
+    },
+    {
+        "category": "Aerobics",
+        "created_at": "2013-12-18T10:19:30Z",
+        "description": "Prominent ex-Gaelic Footballer and barrister. Will probably remind you that you are useless compared to him",
+        "id": 2,
+        "coachemail": "joe@gmail.com",
+        "image_url": "joe_brolly_50.jpg",
+        "name": "Joe Brolly",
+        "price": 45,
+        "updated_at": "2013-12-18T12:10:21Z"
+    },
+    {
+        "category": "Jogging",
+        "created_at": "2013-12-18T11:42:43Z",
+        "description": "A devious, calculating clever cat with no respect for humans",
+        "id": 3,
+        "coachemail": "bonnie@gmail.com",
+        "image_url": "bonnie_exact_50.jpg",
+        "name": "Bonnie Dowling",
+        "price": 12,
+        "updated_at": "2013-12-18T12:21:15Z"
+    },
+    {
+        "category": "Swimming",
+        "created_at": "2013-12-18T12:12:08Z",
+        "description": "Barrister and ex-president of Ireland. Cannot swim but knows how to avoid sinking",
+        "id": 4,
+        "coachemail": "mary@gmail.com",
+        "image_url": "mary_mcaleese_50.jpg",
+        "name": "Mary McAleese",
+        "price": 100.0,
+        "updated_at": "2013-12-18T12:12:08Z"
+    },
+    {
+        "category": "Jogging",
+        "created_at": "2013-12-18T12:15:30Z",
+        "description": "Another ex-GAA player, but shouldn't make any difference to your lesson",
+        "id": 5,
+        "coachemail": "paidi@gmail.com",
+        "image_url": "paidio_se_50.jpg",
+        "name": "Paidi O Se",
+        "price": 130,
+        "updated_at": "2013-12-18T12:16:44Z"
+    },
+    {
+        "category": "Aerobics",
+        "created_at": "2013-12-18T12:22:40Z",
+        "description": "Wife of James Joyce. As Ben Dunne says, 'Do as she says, don't do as she does'",
+        "id": 6,
+        "coachemail": "nora@gmail.com",
+        "image_url": "coach_one_woman_whistle_50.jpg",
+        "name": "Nora Barnacle",
+        "price": 145.0,
+        "updated_at": "2013-12-18T12:22:40Z"
+    },
+    {
+        "category": "Swimming",
+        "created_at": "2013-12-18T12:29:13Z",
+        "description": "A coach guaranteed to make you swim faster. Recommended by aging lecturers at the NCI",
+        "id": 7,
+        "coachemail": "sildenafil@gmail.com",
+        "image_url": "coach_two_man_Facing_50.jpg",
+        "name": "Sildenafil Citrate",
+        "price": 2440,
+        "updated_at": "2013-12-18T12:32:00Z"
+    },
+    {
+        "category": "Aerobics",
+        "created_at": "2013-12-18T12:35:10Z",
+        "description": "A coach with a timer to make you run faster. Not known for his precision or accuracy",
+        "id": 8,
+        "coachemail": "kevin@gmail.com",
+        "image_url": "coach_three_man_with_timer_50.jpg",
+        "name": "Kevin Moran",
+        "price": 33.0,
+        "updated_at": "2014-01-28T17:48:53Z"
+    },
+    {
+        "category": "Jogging",
+        "created_at": "2013-12-18T12:44:08Z",
+        "description": "Much sought after coach by joggers who like a few pints after the lesson",
+        "id":9,
+        "coachemail": "brendan@gmail.com",
+        "image_url": "coach_four_man_pointing_50.jpg",
+        "name": "Brendan Behan",
+        "price": 454.0,
+        "updated_at": "2013-12-18T12:44:08Z"
+    },
+    {
+        "category": "Swimming",
+        "created_at": "2013-12-18T12:49:32Z",
+        "description": "This woman was useless as a referee so we gave her a job as a swimming coach.",
+        "id": 10,
+        "coachemail": "nell@gmail.com",
+        "image_url": "coach_five_woman_green_with_whistle_50.jpg",
+        "name": "Nell McCafferty",
+        "price": 34.0,
+        "updated_at": "2013-12-18T12:50:05Z"
+    },
+    {
+        "category": "Aerobics",
+        "created_at": "2013-12-18T12:51:40Z",
+        "description": "A coach who likes his McDonald's burgers after work.",
+        "id": 11,
+        "coachemail": "ben@gmail.com",
+        "image_url": "coach_six_weight_coach_50.jpg",
+        "name": "Ben Dunne",
+        "price": 45.0,
+        "updated_at": "2013-12-18T12:51:40Z"
+    },
+    {
+        "category": "Jogging",
+        "created_at": "2013-12-18T12:53:17Z",
+        "description": "Cool dude who needs a trip to Specsavers.",
+        "id": 12,
+        "coachemail": "mark@gmail.com",
+        "image_url": "coach_seven_yellow_cool_dude_50.jpg",
+        "name": "Mark Carrington",
+        "price": 33.0,
+        "updated_at": "2013-12-22T16:26:57Z"
+    }
+]

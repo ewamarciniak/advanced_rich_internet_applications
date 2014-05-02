@@ -97,27 +97,46 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
 /*#mapBox {text-align: center;*/
 
-    /*display: inline-block;*/
+/*display: inline-block;*/
 
 /*}*/
-
-
 
 ul {
     list-style: none;
 }
 
-
-canvas
-{
-    top:0;
-    left:0;
+canvas {
+    top: 0;
+    left: 0;
     margin: 0px auto;
 }
 
+/*ul> li:first-child
+{
+    margin-left: 100px;
+}*/
+
+li {
+    display: block;
+    float: left;
+    list-style: none;
+    margin-right: 10px;
+
+}
+
+img{
+    display: inline-block;
+}
+
+.myspan {
+    margin-left: 40px;
+    padding: 0;
+    font: Helvetica;
+    color: grey;
+    font-weight: bold;
+}
 
 /* ==========================================================================
    Helper classes
@@ -307,8 +326,9 @@ canvas
         page-break-after: avoid;
     }
 }
-#chartContainer_1, #chartContainer_2, #chartContainer_3{
-    height:400px;
-    width:100%;
+
+#chartContainer_1, #chartContainer_2, #chartContainer_3 {
+    height: 400px;
+    width: 100%;
     position: relative;
 }

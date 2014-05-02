@@ -3,7 +3,7 @@ exports.config = {
 
   specs: [
     //'e2e/*.js'
-      'e2e/scentwo.js'
+      'e2e/scenarios.js'
   ],
 
   capabilities: {

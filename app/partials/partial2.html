@@ -1,14 +1,15 @@
 <h4>Find a Gym Coach</h4>
 <div>
+    <section>
     <div class="row">
         <div class="-4u 6u">
             <!--Search Functionality-->
             <input ng-model="query"
                    placeholder="Search"
-                   id="ngsearch">
+                   id="ngsearch" type="text">
             </br> </br>
             <h4>Sort by</h4>
-            <select ng-model="orderProp" id = "thomas">
+            <select ng-model="orderProp" id = "sortBy"  class ="dropdown">
                 <option value="name" ng-bind-html="HTMLalpha"></option>
                 <option value="price" ng-bind-html="HTMLlowestPrice"></option>
                 <option value="-price" ng-bind-html="HTMLhighestPrice"></option>
@@ -20,35 +21,28 @@
             </select>
         </div>
 
+
+
+
         <div class="row">
-            <div class="-4u 8u">
+            <div class="-2u 10u">
                 <!--Table of Products-->
                 <ul>
-                    <li class="jsonli"
-                        ng-repeat="coach in coachList | filter:query | orderBy:orderProp"
-                        ng-class-odd="myclass">
+                    <li ng-repeat="coach in coachList | filter:query | orderBy:orderProp">
 
-                        <table>
-                            <tbody>
-                            <tr>
-                                <td title="image">
-                                    <figure><img ng-src="./img/{{coach.image_url}} ">
-                                    <figcaption id = "figcaption">{{myFirstName(coach.name)}}</figcaption>
-                                    </figure>
-                                </td>
-                                <td>{{coach.category}}</td>
-                                <td>{{coach.name}}</td>
-                                <td>{{coach.description}}</td>
-                                <td>{{coach.price | nfcurrency:"&euro;" }}/hr</td>
-                                <td>{{coach.coachemail}}</td>
-                            </tr>
-                            </tbody>
-                        </table>
+                       <span class ="myspan2"><img ng-src="./img/{{coach.image_url}} "></span>
+                       <span id = "myFirstName" class ="myspan">{{myFirstName(coach.name)}}</span>
+                       <span class ="myspan"> {{coach.category}}</span>
+
+                       <span class ="myspan">{{coach.price | nfcurrency:"&euro;" }}/hr</span>
+                        <span class ="myspan"> {{coach.coachemail}}</span>
+
                     </li>
                 </ul>
             </div>
         </div>
     </div>
+    </section>
 </div>
 
 

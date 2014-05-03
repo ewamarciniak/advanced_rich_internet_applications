@@ -67,6 +67,8 @@ button, .button {
     border-radius:20px 20px 20px 20px;
 }
 
-#login {
+#media {
+    margin-top: 1.5em;
     float:right;
+    border: none;
 }

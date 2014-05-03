@@ -130,7 +130,7 @@ describe('my app', function () {
 
             it('should show correct text for gym location ', function () {
 
-                 
+                var ptor = protractor.getInstance();
 
                 //This will not get the option required
 
@@ -139,7 +139,6 @@ describe('my app', function () {
                 ptor.findElement(protractor.By.css('#addressinput option:nth-child(2)')).click();
                 ptor.findElement(protractor.By.css('#Button1')).click();
                 expect(ptor.findElement(protractor.By.css('#l1')).getText()).toMatch('Quarry Road');
-                expect(ptor.findElement(protractor.By.css('#map')).getText()).not.toMatch('');
 
                 ptor.findElement(protractor.By.css('#addressinput option:nth-child(3)')).click();
                 ptor.findElement(protractor.By.css('#Button1')).click();
@@ -303,5 +302,4 @@ describe('my app', function () {
             });
         });
     });
-
 });

@@ -130,7 +130,7 @@ describe('my app', function () {
 
             it('should show correct text for gym location ', function () {
 
-                var ptor = protractor.getInstance();
+                 
 
                 //This will not get the option required
 

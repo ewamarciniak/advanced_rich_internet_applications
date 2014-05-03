@@ -41,6 +41,10 @@ angular.module('myApp.controllers', ['ngSanitize'])
             gymlocations[0] = "Cork Street Dublin";
             gymlocations[1] = "Quarry Road, Cabra, Dublin";
             gymlocations[2] = "Bishopstown Road, Cork";
+            gymlocations[3] = "Henry Street, Galway";
+            gymlocations[4] = "Ennis Road,Limerick";
+            gymlocations[5] = "Rindoon Park, Athlone";
+            gymlocations[6] = "Scarlett Street, Drogheda";
 
             geocoder.geocode({ 'address': address }, function (results, status) {
                 if (status == google.maps.GeocoderStatus.OK) {
@@ -61,6 +65,26 @@ angular.module('myApp.controllers', ['ngSanitize'])
                     }
                     if (address == gymlocations[2]) {
                         document.getElementById('l1').innerHTML = gymlocations[2] + ' Tel: 01 7675432';
+
+                    }
+
+                    if (address == gymlocations[3]) {
+                        document.getElementById('l1').innerHTML = gymlocations[3] + ' Tel: 01 7775432';
+
+                    }
+
+                    if (address == gymlocations[4]) {
+                        document.getElementById('l1').innerHTML = gymlocations[4] + ' Tel: 01 3475432';
+
+                    }
+
+                    if (address == gymlocations[5]) {
+                        document.getElementById('l1').innerHTML = gymlocations[5] + ' Tel: 045 9995432';
+
+                    }
+
+                    if (address == gymlocations[6]) {
+                        document.getElementById('l1').innerHTML = gymlocations[6] + ' Tel: 01 5435432';
 
                     }
                 }

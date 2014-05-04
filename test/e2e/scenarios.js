@@ -14,7 +14,8 @@ describe('my app', function () {
             browser.get('index.html#/view2');
         });
 
-        it('should render view2 when user navigates to /view2', function () {
+        it('should render view2 when user navigates to /view2'p
+            , function () {
             expect(element.all(by.css('[ng-view] h4')).first().getText()).
                 toMatch(/Find a Gym Coach/);
         });
